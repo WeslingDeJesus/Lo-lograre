@@ -3,10 +3,10 @@ let horasTrabajadas = prompt('¿Cuantas horas trabajas al dia?');
 
 let salario = parseFloat(precioHoras) * parseFloat(horasTrabajadas);
 
-if(salario >= 0){
+if(salario > 0){
     alert(`Tu salario al dia sera de ${salario}`);
 }
-else if(salario < 0){
+else if(salario <= 0){
     alert('Este mes no vas a cobrar');
 }
 else{
